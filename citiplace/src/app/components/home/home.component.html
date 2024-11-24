@@ -1,0 +1,75 @@
+<div class="hero">
+  <div class="hero-img">
+    <div class="hero-text">
+      <div class="hero-title">
+        <h1>
+          Your One-Stop Solution for Renting, Buying, and Selling Properties
+        </h1>
+        <span
+          >A great platform to buy, sell, or even rent your properties without
+          any commissions.</span
+        >
+      </div>
+    </div>
+    <div class="tabs">
+      <div class="card">
+        <p-tabView>
+          <p-tabPanel header="Rent">
+            <div class="tab">
+              <div class="location-field">
+                <label for="username">Location</label>
+                <input pInputText id="location" [(ngModel)]="value" />
+              </div>
+              <div class="date-field">
+                <label for="date">Date</label>
+                <p-calendar
+                  [(ngModel)]="date"
+                  [iconDisplay]="'input'"
+                  [showIcon]="true"
+                  inputId="icondisplay"
+                />
+              </div>
+              <div class="browse_button">
+                <p-button label="Browse Properties" />
+              </div>
+            </div>
+          </p-tabPanel>
+          <p-tabPanel header="Buy">
+            <div class="tab">
+              <div class="location-field">
+                <label for="location">Location</label>
+                <input pInputText id="location" [(ngModel)]="value" />
+              </div>
+              <div class="date-field">
+                <label for="date">Date</label>
+                <p-calendar
+                  [(ngModel)]="date"
+                  [iconDisplay]="'input'"
+                  [showIcon]="true"
+                  inputId="icondisplay"
+                />
+              </div>
+            </div>
+          </p-tabPanel>
+          <p-tabPanel header="Sell">
+            <div class="tab">
+              <div class="location-field">
+                <label for="location">Location</label>
+                <input pInputText id="location" [(ngModel)]="value" />
+              </div>
+              <div class="date-field">
+                <label for="date">Date</label>
+                <p-calendar
+                  [(ngModel)]="date"
+                  [iconDisplay]="'input'"
+                  [showIcon]="true"
+                  inputId="icondisplay"
+                />
+              </div>
+            </div>
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+    </div>
+  </div>
+</div>

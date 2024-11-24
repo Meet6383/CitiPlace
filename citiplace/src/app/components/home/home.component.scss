@@ -1,0 +1,108 @@
+.hero {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+  background-image: url("/assets/images/hero.png");
+  background-size: cover;
+  padding: 4rem;
+}
+
+.hero-text {
+  width: 30rem;
+  color: #362e39;
+}
+
+.hero-title h1 {
+  width: 40rem;
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: #262128;
+}
+
+.hero-title span {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: 500;
+  color: #312a34;
+}
+
+.tabs {
+  height: 5rem;
+  width: 30rem;
+  margin: 1rem 0;
+}
+
+.tab {
+  height: 2rem;
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.location-field .date-field {
+  width: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+
+.browse_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+:host ::ng-deep {
+  //TabView
+  .p-tabview .p-tabview-nav {
+    background-color: #ebeaeb;
+    font-size: 0.8rem;
+    height: 2.5rem;
+  }
+
+  .p-tabview .p-tabview-nav li {
+    width: 4rem;
+  }
+
+  .p-tabview .p-tabview-nav li.p-highlight a {
+    background-color: #5e5861;
+    color: #ffffff;
+    padding: 1rem;
+  }
+
+  .p-tabview .p-tabview-panels {
+    background-color: #c1bec2;
+    display: flex;
+  }
+
+  //InputText
+  .p-inputtext {
+    margin: 0.2rem 0;
+    height: 1rem;
+    width: 6rem;
+    border: 1px solid #c1bec2;
+    font-size: 0.8rem;
+  }
+
+  //browse button
+  .p-button {
+    background-color: #5e5861;
+    color: #ffffff;
+    font-size: 0.6rem;
+    margin: 0.2rem 0;
+    padding: 0.3rem 0.5rem;
+  }
+}
