@@ -1,0 +1,112 @@
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background-color: #c1bec2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5%;
+  position: fixed;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-button {
+  border: none;
+  background: none;
+}
+
+.logo-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo span {
+  font-size: 1.25rem;
+  color: #362e39;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.nav-right {
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-buttons p-button {
+  padding-left: 0.5rem;
+}
+
+:host ::ng-deep {
+  // navbar links
+  .p-menubar {
+    background-color: #c1bec2;
+    font-family: "Poppins", sans-serif;
+    color: #1e191f;
+    padding: 0.25rem;
+    border: 0;
+  }
+
+  .p-menubar span {
+    color: #362e39;
+    font-size: 1rem;
+  }
+
+  .p-menubar a {
+    padding: 0.5rem 0.75rem;
+  }
+
+  //navbar searchbar
+  .search input {
+    height: 1.5rem;
+    min-width: 250px;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    background-color: whitesmoke;
+    color: #362e39;
+    font-size: 0.75rem;
+    border: 1px solid #78737a;
+  }
+
+  //navbar account buttons
+  .account-buttons .p-button.p-button-sm {
+    width: 4rem;
+    --display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.35rem;
+    font-size: 0.35rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    background-color: #5e5861;
+    color: #ebeaeb;
+  }
+
+  .account-buttons p-button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+  }
+}

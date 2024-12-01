@@ -9,10 +9,18 @@ import { AppComponent } from './app.component';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { TabViewModule } from 'primeng/tabview';
+import { ComponentsModule } from './components/components.module';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, MenubarModule, ButtonModule],
+  declarations: [AppComponent, HeaderComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MenubarModule,
+    ButtonModule,
+    ComponentsModule,
+  ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })

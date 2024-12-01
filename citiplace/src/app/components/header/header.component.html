@@ -1,0 +1,31 @@
+<div class="navbar">
+  <div class="nav-left">
+    <div class="logo">
+      <button class="logo-button">
+        <a href="">
+          <img src="../assets/images/Logo.png" alt="Logo" />
+          <span>CitiPlace</span>
+        </a>
+      </button>
+    </div>
+    <div class="nav-links">
+      <p-menubar [model]="items" />
+    </div>
+  </div>
+  <div class="nav-right">
+    <div class="search">
+      <input
+        type="text"
+        pInputText
+        placeholder="Search"
+        class="w-8rem sm:w-auto"
+      />
+    </div>
+    <div class="account-buttons">
+      <p-button label="Sign In" size="small" />
+      <p-button label="Sign Up" size="small" />
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

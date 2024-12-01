@@ -9,9 +9,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { CalendarModule } from 'primeng/calendar';
+import { MenubarModule } from 'primeng/menubar';
+import { AvatarModule } from 'primeng/avatar';
+import { BadgeModule } from 'primeng/badge';
+import { ServiceComponent } from './service/service.component';
+import { DisplayComponent } from './display/display.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, ServiceComponent, DisplayComponent],
   imports: [
     CommonModule,
     ComponentsRoutingModule,
@@ -23,6 +28,9 @@ import { CalendarModule } from 'primeng/calendar';
     FloatLabelModule,
     FormsModule,
     CalendarModule,
+    MenubarModule,
+    AvatarModule,
+    BadgeModule,
   ],
 })
 export class ComponentsModule {}

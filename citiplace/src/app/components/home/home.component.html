@@ -49,6 +49,9 @@
                   inputId="icondisplay"
                 />
               </div>
+              <div class="browse_button">
+                <p-button label="Browse Properties" />
+              </div>
             </div>
           </p-tabPanel>
           <p-tabPanel header="Sell">
@@ -66,10 +69,46 @@
                   inputId="icondisplay"
                 />
               </div>
+              <div class="browse_button">
+                <p-button label="Browse Properties" />
+              </div>
             </div>
           </p-tabPanel>
         </p-tabView>
       </div>
     </div>
+    <div class="customer-display">
+      <div class="first-section">
+        <div class="avatar">
+          <p-avatar
+            icon="pi pi-users"
+            styleClass="mr-2"
+            shape="circle"
+            size="large"
+          />
+          <h3>Trusted by 50,000+</h3>
+          <p>happy customers – your confidence drives our success!</p>
+        </div>
+      </div>
+      <div class="second-section">
+        <div class="avatar">
+          <p-avatar
+            icon="pi pi-users"
+            styleClass="mr-2"
+            shape="circle"
+            size="large"
+          />
+          <h3>10,000+ properties</h3>
+          <p>
+            available for rent, purchase, and sale – helping dreams find their
+            perfect home!
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<div class="services">
+  <app-service></app-service>
+</div>
+<div class="display"></div>
