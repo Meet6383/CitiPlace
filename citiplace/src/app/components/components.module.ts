@@ -14,9 +14,17 @@ import { AvatarModule } from 'primeng/avatar';
 import { BadgeModule } from 'primeng/badge';
 import { ServiceComponent } from './service/service.component';
 import { DisplayComponent } from './display/display.component';
+import { PurposeComponent } from './purpose/purpose.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
-  declarations: [HomeComponent, ServiceComponent, DisplayComponent],
+  declarations: [
+    HomeComponent,
+    ServiceComponent,
+    DisplayComponent,
+    PurposeComponent,
+    AccountComponent,
+  ],
   imports: [
     CommonModule,
     ComponentsRoutingModule,

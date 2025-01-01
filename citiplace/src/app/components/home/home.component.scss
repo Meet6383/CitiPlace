@@ -12,7 +12,7 @@
   width: 100%;
   background-image: url("/assets/images/hero.png");
   background-size: cover;
-  padding: 2rem 4rem;
+  padding: 4rem 4rem;
 }
 
 .hero-text {
@@ -94,28 +94,28 @@ label {
 
 :host ::ng-deep {
   //TabView
-  .p-tabview .p-tabview-nav {
+  .tabs .card .p-tabview .p-tabview-nav {
     background: none;
     font-size: 1rem;
     height: 2.5rem;
   }
 
-  .p-tabview .p-tabview-nav li {
+  .tabs .card .p-tabview .p-tabview-nav li {
     width: 4rem;
   }
 
-  .p-tabview .p-tabview-nav li a {
+  .tabs .card .p-tabview .p-tabview-nav li a {
     border-radius: 10px 10px 0 0;
   }
 
-  .p-tabview .p-tabview-nav li.p-highlight a {
+  .tabs .card .p-tabview .p-tabview-nav li.p-highlight a {
     background-color: #5e5861;
     color: #ffffff;
     padding: 1rem;
     border-radius: 8px 8px 0 0;
   }
 
-  .p-tabview .p-tabview-panels {
+  .tabs .card .p-tabview .p-tabview-panels {
     height: 5rem;
     padding: 1rem 0.5rem;
     background-color: #c1bec2;
@@ -123,7 +123,7 @@ label {
   }
 
   //InputText
-  .p-inputtext {
+  .tabs .card .p-inputtext {
     margin: 0.2rem 0;
     height: 1rem;
     width: 9rem;
@@ -132,12 +132,12 @@ label {
   }
 
   //browse button
-  .browse_button .p-button {
+  .tabs .card .browse_button .p-button {
     height: 2.75rem;
     min-width: 8rem;
     background-color: #5e5861;
     color: #ffffff;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin: 0.2rem 0;
     padding: 0.3rem 0.5rem;
   }

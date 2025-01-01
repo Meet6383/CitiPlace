@@ -8,6 +8,7 @@ import { MenuItem } from 'primeng/api/menuitem';
 })
 export class HeaderComponent implements OnInit {
   items: MenuItem[] | undefined;
+  showLogin: boolean = false;
 
   constructor() {}
 
@@ -23,15 +24,14 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Sell',
       },
-      {
-        label: 'Manage Properties',
-        items: [
-          {
-            label: 'Add Property',
-            routerLink: 'add-property',
-          },
-        ],
-      },
     ];
+  }
+
+  onSignIn() {
+    this.showLogin = true;
+  }
+
+  onSignUp() {
+    this.showLogin = true;
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api/menuitem';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,9 @@ import { MenuItem } from 'primeng/api/menuitem';
 })
 export class AppComponent implements OnInit {
   title = 'citiplace';
-  items: MenuItem[] | undefined;
+  HeaderComponent = new HeaderComponent();
 
-  ngOnInit(): void {}
+  constructor() {}
+
+  ngOnInit() {}
 }
